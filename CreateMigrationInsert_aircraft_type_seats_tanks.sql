@@ -22,7 +22,7 @@ SELECT CONCAT("if(AircraftTypeSeats::find()->where(['aircraft_type_id'=>",aircra
 			",'grid_empty_bottom'=>",IFNULL(grid_empty_bottom,'NULL'),
 			",'grid_empty_left'=>",IFNULL(grid_empty_left,'NULL'),
 			",'html_available'=>'",IFNULL(html_available,'NULL'),"']);}")
-FROM aircraft_type_seats ats 
+FROM aircraft_type_seats
 ORDER BY id;
 SELECT CONCAT("if(AircraftTypeTanks::find()->where(['aircraft_type_id'=>",aircraft_type_id,
 			",'aircraft_fuel_id'=>",IFNULL(aircraft_fuel_id,'NULL') ,
@@ -39,6 +39,6 @@ SELECT CONCAT("if(AircraftTypeTanks::find()->where(['aircraft_type_id'=>",aircra
 			",'external_weight'=>",IFNULL(external_weight,'NULL'),
 			",'external_weight_units_id'=>",IFNULL(external_weight_units_id,'NULL'),
 			"]);}")
-FROM aircraft_type_tanks att
+FROM aircraft_type_tanks
 ORDER BY id
 
